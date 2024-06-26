@@ -1,0 +1,95 @@
+h1{
+    font-family: "Teko", sans-serif;
+    font-size: 7rem;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+#i1{
+    width: 100px;
+    display: inline-block;
+}
+#i2{
+    position: absolute;
+    width: 25%;
+    left: 72%;
+    top: 45%;
+}
+#i3{
+    position: absolute;
+    width: 25%;
+    left: 5%;
+    top: 43%;
+}
+#i4{
+    position: absolute;
+    width: 25%;
+    left: 72%;
+    top: 45%;
+}
+#t3{
+    font-family: "Teko", sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    left: 13%;
+    top: 30%;
+}
+#t4{
+    font-family: "Teko", sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    left: 81%;
+    top: 30%;
+}
+#t1{
+    width: 24%;
+    margin-left: 38%;
+    background-color: #555;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 16px;
+}
+#ires{
+    width: 24%;
+    margin-left: 38%;
+    display: block;
+}
+label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 25px;
+        margin-left: 32%;
+        font-weight: bold;
+        color: #555;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    margin-left: 41%;
+    width: 18%;
+    background-color: #333131;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #000000;
+}
+
+input {
+    display: block;
+    width: 36%;
+    margin-left: 32%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; 
+}

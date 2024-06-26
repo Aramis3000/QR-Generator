@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="images/main_icon.jpg" type="image/jpg">
+    <title>QRify</title>
+</head>
+<body>
+    <img id="i1" src="images/qr_icon.jpg">
+    <h1>QRify</h1>
+
+    <div id="t1"><%= url %></div>
+    <img id ="ires" src="<%= qrCodePath %>" alt="QR Code">
+
+    <form action="/">
+        <button type="submit">Generate Another QR Code <i class="fa-solid fa-qrcode"></i></button>
+    </form>
+    
+    <form id="downloadForm" action="/download" method="POST">
+        <input type="hidden" name="qrCodePath" value="<%= qrCodePath %>">
+        <button type="submit">Download QR Code <i class="fa-solid fa-download"></i></button>
+    </form>
+    
+    <div id="t3">Download</div>
+    <div id="t4">Scan</div>
+    <img id="i3" src="images/qr_download.png">
+    <img id="i4" src="images/mobile_scan.jpg">
+    
+
+    <script>
+        document.getElementById('downloadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            var qrCodePath = document.querySelector('input[name="qrCodePath"]').value;
+
+            var downloadLink = document.createElement('a');
+            downloadLink.href = qrCodePath;
+            downloadLink.download = 'qr-code.png';
+
+            downloadLink.click();
+        });
+    </script>
+</body>
+</html>

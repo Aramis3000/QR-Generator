@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="images/main_icon.jpg" type="image/jpg">
+    <title>QRify</title>
+</head>
+<body>
+    <img id="i1" src="images/qr_icon.jpg">
+
+    <h1>QRify</h1>
+    <form action="/submit" method="POST">
+        <label for="urlInput">Type the URL:</label>
+        <input type="text" id="urlInput" name="URL" required placeholder="eg. https://www.google.com">
+        <button type="submit">Generate QR Code <i class="fa-solid fa-qrcode"></i></button>
+    </form>
+    <img id="i2" src="images/qr_scanner.jpg">
+</body>
+</html>
