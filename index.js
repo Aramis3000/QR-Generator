@@ -1,8 +1,3 @@
-/* 
-1. Use the inquirer npm package to get user input.
-2. Use the qr-image npm package to turn the user entered URL into a QR code image.
-3. Create a txt file to save the user input using the native fs node module.
-*/
 import qr from 'qr-image';
 import fs from 'fs';
 import express from "express";
@@ -32,12 +27,13 @@ app.post('/submit', (req, res) => {
   
   const writeStream = fs.createWriteStream('public/images/qr-code.png');
 
-    qrSvg.pipe(writeStream);
+  qrSvg.pipe(writeStream);
 
-    res.render('result.ejs', { url: url, qrCodePath: '/images/qr-code.png' });
+  res.render('result.ejs', { url: url, qrCodePath: 'images/qr-code.png' });
       
 });
-    app.listen(port, () => {
-      console.log(`Listening on port ${port}`);
-    });
+    
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
 

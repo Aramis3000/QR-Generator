@@ -41,6 +41,10 @@ h1{
     left: 81%;
     top: 30%;
 }
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
 #t1{
     width: 24%;
     margin-left: 38%;
